@@ -36,7 +36,6 @@ jobs:
           release_name: 'Vitefest ${{ steps.get_version.outputs.VERSION }}'
           body: 'Download the cli, or pre-packed template please.'
 
-  
   # 编译 CLI
   build-cli:
     needs: create-release
