@@ -4,7 +4,8 @@
 </p>
 
 <p align="center">Build your own Chrome Extension(Manifest V3) with modern frontend frameworks, powered by Vite.</p>
-<p align="center" style="font-style: italic">Vite + Manifest = Vitefest</p>
+
+<p align="center" style="font-style: italic; font-weight: bold;">Vite + Manifest = Vitefest<p>
 
 # Installation
 
@@ -30,7 +31,7 @@ vitefest-cli create lite
 vitefest-cli create normal --name my-project
 ```
 
-## Use Template Pack
+## Use template pack
 Directly download from release:
 
 normal: `react-normal-extension-pack.zip`.
@@ -40,8 +41,11 @@ lite: `react-lite-extension-pack.zip`.
 ## Get from webpage
 Coming soon.
 
+# Build from source
+
+
 # Future Plan
-In version v1.0.0, `vitefest-cli` can only create `React` projects. Other framework will be added soon.
+In version v1.0.0, `vitefest-cli` can only create `React` projects. Other frameworks will be added soon.
 
 | Frameworks | Done |
 |     --     | --   |
