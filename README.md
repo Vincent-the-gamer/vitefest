@@ -16,6 +16,8 @@ Download `vitefest-cli` from release:
 
 https://github.com/Vincent-the-gamer/vitefest/releases
 
+**Latest: v1.0.0**
+
 Then use following command to create your template project of Chrome Extension.
 
 ```shell
