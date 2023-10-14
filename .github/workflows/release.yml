@@ -50,10 +50,10 @@ jobs:
       - uses: actions/checkout@v2
  
     # 安装 Stable Rust
-      - name: Install Rust Stable
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
+    - name: Install Rust Stable
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
  
     # 使用 Rust 缓存，加快安装速度
     - uses: Swatinem/rust-cache@v1
@@ -66,24 +66,24 @@ jobs:
           sudo apt-get install -y libgtk-3-dev webkit2gtk-4.0 libappindicator3-dev librsvg2-dev patchelf
 
     # 安装依赖执行构建，以及推送 github release
-      - name: Install app dependencies and build it
+    - name: Install app dependencies and build it
 
     # package.json里面配置的编译命令
-        run: |
-          if [[ ${{ matrix.platform }} == 'macos-latest' ]]; then
-            # 在Intel macOS上执行构建命令
-            rustup target install x86_64-apple-darwin
-            cargo build --release --target x86_64-apple-darwin
-          elif [[ ${{ matrix.platform }} == 'macos-arm64' ]]; then
-            # 在Apple Silicon macOS上执行构建命令
-            rustup target install aarch64-apple-darwin
-            cargo build --release --target aarch64-apple-darwin
-          else
-            # 在其他平台上执行构建命令
-            cargo build --release
-          fi
-      - uses: actions/checkout@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          releaseId: ${{ needs.create-release.outputs.RELEASE_UPLOAD_ID }}
+      run: |
+        if [[ ${{ matrix.platform }} == 'macos-latest' ]]; then
+          # 在Intel macOS上执行构建命令
+          rustup target install x86_64-apple-darwin
+          cargo build --release --target x86_64-apple-darwin
+        elif [[ ${{ matrix.platform }} == 'macos-arm64' ]]; then
+          # 在Apple Silicon macOS上执行构建命令
+          rustup target install aarch64-apple-darwin
+          cargo build --release --target aarch64-apple-darwin
+        else
+          # 在其他平台上执行构建命令
+          cargo build --release
+        fi
+    - uses: actions/checkout@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        releaseId: ${{ needs.create-release.outputs.RELEASE_UPLOAD_ID }}
