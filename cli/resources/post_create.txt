@@ -1,0 +1,12 @@
+Created ${project_info}!
+
+Build your extension:
+
+cd ${project_info}
+pnpm install
+
+# development
+pnpm run serve
+
+# production
+pnpm run build

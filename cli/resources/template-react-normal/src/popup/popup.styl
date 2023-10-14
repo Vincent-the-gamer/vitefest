@@ -1,0 +1,108 @@
+html
+    background-color rgb(1, 1, 62)
+    color white
+    ::-webkit-scrollbar
+        display none
+
+.popup
+    width 400px
+    padding 5px
+   
+    h1, h3
+        position relative
+        margin 5px auto
+        width fit-content
+
+    h1
+        font-size 27px
+
+
+    p
+        position relative
+        margin 0 auto
+        width fit-content
+    
+    .img-area
+        position relative
+        margin 0 auto
+        display flex
+        flex-direction row
+        justify-content center
+        align-items center
+        img
+            $size = 120px
+            position relative
+            width $size
+            height $size
+            border-radius 7px
+            backdrop-filter blur(5px)
+            transition: all, 0.2s
+            hover-shadow(color)
+                &:hover
+                    filter drop-shadow(0 0 30px color)
+            &#vite
+                hover-shadow( violet )
+            &#react
+                hover-shadow( rgb(0, 218, 255) )
+            &#manifest
+                hover-shadow( rgb(255, 86, 0) )
+            
+                
+    
+    .test
+        background-color rgba(0, 0, 0, 0.42)
+        border-radius 7px
+        padding 5px
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+
+        h3, h4, h5 
+            margin 0 auto
+
+        input 
+            background-color transparent
+            border 2px solid deepskyblue
+            border-radius 5px
+            height 30px
+            display block
+            color white
+            margin 2px auto
+            transition all, 0.2s
+            &:focus
+                background-color rgb(71, 0, 71)
+                border 2px solid pink
+        
+        button
+            background-color transparent
+            border 2px solid deepskyblue
+            border-radius 5px
+            color white
+            height fit-content
+            width fit-content
+            padding 7px
+            margin-right 5px
+            transition all, 0.2s
+            &:hover
+                background-color rgb(71, 0, 71)
+                border 2px solid pink
+                cursor pointer
+
+        .title
+            color red
+
+    .ps
+       a 
+           transition all, 0.2s
+           color orange
+           text-shadow 0 0 10px orange,
+                       0 0 20px orange
+           &:hover
+             color deeppink
+             text-shadow 0 0 10px red,
+                         0 0 20px red
+       h3
+         width fit-content
+         margin 0 auto
+         text-align center

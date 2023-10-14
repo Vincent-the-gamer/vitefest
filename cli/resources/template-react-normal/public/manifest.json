@@ -1,0 +1,46 @@
+{
+    "name": "${app_name}",
+    "version": "1.0",
+    "description": "${app_description}",
+    "manifest_version": 3,
+    "permissions": [
+      "storage",
+      "declarativeContent",
+      "notifications",
+      "contextMenus",
+      "activeTab"
+    ],
+    "host_permissions": [],
+    "web_accessible_resources": [
+      {
+        "resources": [ "/images/ashley.png" ],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/images/ashley.png",
+        "32": "/images/ashley.png",
+        "48": "/images/ashley.png",
+        "128": "/images/ashley.png"
+      },
+      "default_title": "${app_name}"
+    },
+    "icons": {
+      "16": "/images/ashley.png",
+      "32": "/images/ashley.png",
+      "48": "/images/ashley.png",
+      "128": "/images/ashley.png"
+    },
+    "options_page": "options.html",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+          "js": ["content.js"],
+          "matches": ["<all_urls>"]
+      }
+    ]
+  }

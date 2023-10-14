@@ -1,0 +1,25 @@
+{
+  "name": "app_name",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prebuild": "vite build -c vite.background.config.ts && vite build -c vite.content.config.ts && node copy.js",
+    "serve": "pnpm run prebuild && vite build --watch --mode development",
+    "build": "pnpm run prebuild && tsc && vite build"
+  },
+  "dependencies": {
+    "nanoid": "^5.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.3",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^4.1.0",
+    "stylus": "^0.60.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.11"
+  }
+}

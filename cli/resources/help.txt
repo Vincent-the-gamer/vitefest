@@ -1,0 +1,20 @@
+vitefest-cli v${version}
+Easy to create chrome extension.
+
+USAGE:
+    vitefest-cli [OPTIONS] {sub-options(optional)} <variable> <value> <variable> <value>......
+
+OPTIONS:
+    help, -h         Prints help information
+    version, -v      Prints version of vitefest-cli
+    create           Create Chrome extension
+        sub-options: 
+            normal   Create Vite + React extension with popup, options, background, content(default).
+            lite     Create Vite + React extension with popup, options.
+        variable:
+            --name   Target project name.
+        examples:
+            vitefest-cli create  ----->  default create normal
+            vitefest-cli create normal  ---->  create normal extension with preset name
+            vitefest-cli create lite   ---->  create lite extension with preset name
+            vitefest-cli create lite --name my-extension   ---> create lite extension with name: "my-extension"
