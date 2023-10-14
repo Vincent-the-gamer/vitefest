@@ -38,7 +38,7 @@ jobs:
 
   
   # 编译 CLI
-  build-vitefest-cli:
+  build-cli:
     needs: create-release
     strategy:
       fail-fast: false
