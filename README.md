@@ -43,8 +43,17 @@ lite: `react-lite-extension-pack.zip`.
 ## Get from webpage
 Coming soon.
 
-# Build from source
+## Notice
+The stylesheets are written in Stylus, if you want to use css, less, sass, scss, please uninstall stylus.
+```shell
+pnpm uninstall stylus
+```
 
+# Documentation
+[See Documentation](https://vincent-the-gamer.github.io/vitefest-docs/)
+
+# Build CLI from source
+cargo build --release
 
 # Future Plan
 In version v1.0.0, `vitefest-cli` can only create `React` projects. Other frameworks will be added soon.

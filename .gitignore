@@ -2,3 +2,5 @@
 cli/target
 .idea
 test
+
+node_modules

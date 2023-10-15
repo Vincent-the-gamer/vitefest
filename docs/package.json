@@ -1,0 +1,18 @@
+{
+  "name": "vitefest-docs",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "serve": "vitepress dev contents",
+    "build": "vitepress build contents",
+    "preview": "vitepress preview contents"
+  },
+  "keywords": [],
+  "author": "Vincent-the-gamer(诡锋)",
+  "license": "ISC",
+  "devDependencies": {
+    "stylus": "^0.60.0",
+    "vitepress": "1.0.0-rc.22"
+  }
+}
