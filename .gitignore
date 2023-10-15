@@ -4,3 +4,5 @@ cli/target
 test
 
 node_modules
+cache
+docs/contents/.vitepress/cache
