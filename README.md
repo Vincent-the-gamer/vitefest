@@ -3,7 +3,7 @@
     <h1 align="center">Vitefest  [ˈvi:tɪfest]</h1>
 </p>
 
-<p align="center">Build your own Chrome Extension(Manifest V3) with modern frontend frameworks, powered by Vite.</p>
+<p align="center">Chrome Extension(Manifest V3) templates based on modern frontend frameworks, powered by Vite.</p>
 
 <p align="center" style="font-style: italic; font-weight: bold;">Vite + Manifest = Vitefest<p>
 
