@@ -31,7 +31,7 @@ vitefest-cli create lite
 vitefest-cli create normal --name my-project
 ```
 
-::: 警告
+::: warning 警告
 macOS/Linux环境下，如果提示command not found, 使用`./vitefest-cli` 代替 `vitefest-cli`即可。
 你也可以配置环境变量(添加路径到PATH)来让命令行工具可以在全局环境下使用`vitefest-cli`。
 :::

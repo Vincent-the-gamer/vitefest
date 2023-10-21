@@ -6,3 +6,4 @@ test
 node_modules
 cache
 docs/contents/.vitepress/cache
+docs/contents/.vitepress/dist
