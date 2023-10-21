@@ -29,7 +29,8 @@ vitefest-cli create normal
 # create a project including popup, options.
 vitefest-cli create lite
 
-# you can customize your project-name while creating.
+# you can customize your project name using "--name", 
+# or a default name if you don't give one.
 vitefest-cli create normal --name my-project
 ```
 
@@ -53,7 +54,10 @@ pnpm uninstall stylus
 [See Documentation](https://vincent-the-gamer.github.io/vitefest-docs/)
 
 # Build CLI from source
+
+```shell
 cargo build --release
+```
 
 # Future Plan
 In version v1.0.0, `vitefest-cli` can only create `React` projects. Other frameworks will be added soon.

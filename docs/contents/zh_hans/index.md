@@ -14,6 +14,9 @@ hero:
     - theme: brand
       text: 使用说明书
       link: /zh_hans/userManual
+    - theme: alt
+      text: 开发指南
+      link: /zh_hans/devGuide
 
 features:
   - title: 感受Vite的开发体验

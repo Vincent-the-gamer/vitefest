@@ -13,6 +13,9 @@ hero:
     - theme: brand
       text: User Manual
       link: /userManual
+    - theme: alt
+      text: Development Guide
+      link: /devGuide
 
 features:
   - title: Feel the Vite DX
