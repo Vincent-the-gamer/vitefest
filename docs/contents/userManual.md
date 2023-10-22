@@ -32,6 +32,15 @@ vitefest-cli create lite
 vitefest-cli create normal --name my-project
 ```
 
+Next, you need to choose a framwork:
+1. React
+2. Vue  (Soon)
+3. Svelte  (Soon)
+4. Solid  (Soon)
+5. Qwik  (Soon)
+
+![cli-framework](/imgs/cli-framework.png)
+
 ::: warning
 For macOS/Linux, if encounter "command not found", please use `./vitefest-cli` instead of `vitefest-cli`.
 You may add the path into your `PATH` environment variable to make it global, and use `vitefest-cli` anywhere.
@@ -40,6 +49,10 @@ You may add the path into your `PATH` environment variable to make it global, an
 3. Let's Rock!
 
 Open your project, install dependencies and happy hacking!
+
+![rock1](/imgs/rock1.png)
+
+![rock2](/imgs/rock2.png)
 
 ### Use Template
 

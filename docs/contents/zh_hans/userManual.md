@@ -31,6 +31,16 @@ vitefest-cli create lite
 vitefest-cli create normal --name my-project
 ```
 
+接下来，选择一个框架:
+1. React
+2. Vue  (后续添加)
+3. Svelte  (后续添加)
+4. Solid  (后续添加)
+5. Qwik  (后续添加)
+
+![cli-framework](/imgs/cli-framework.png)
+
+
 ::: warning 警告
 macOS/Linux环境下，如果提示command not found, 使用`./vitefest-cli` 代替 `vitefest-cli`即可。
 你也可以配置环境变量(添加路径到PATH)来让命令行工具可以在全局环境下使用`vitefest-cli`。
@@ -39,6 +49,10 @@ macOS/Linux环境下，如果提示command not found, 使用`./vitefest-cli` 代
 3. 躁起来!
 
 打开工程，安装依赖，然后开始整活吧！
+
+![rock1](/imgs/rock1.png)
+
+![rock2](/imgs/rock2.png)
 
 ### 使用模板
 
